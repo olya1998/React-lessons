@@ -1,5 +1,6 @@
 {
   "name": "olya-app",
+  "homepage" : "https://olya1998.github.io/React-lessons",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
