@@ -13,20 +13,17 @@ code {
 }
 
 .header {
-  /* position: absolute; */
-width: 1300px;
-height: 48px;
-left: 50px;
-top: 30px;
-
-background: #D9D9D9;
+  width: 1300px;
+  height: 48px;
+  left: 50px;
+  top: 30px;
+  background: #D9D9D9;
 }
 
 #header { grid-area: header; }
 #banner { grid-area: banner; }
 #blog-container { grid-area: blog-container; }
 #news-container { grid-area: news-container; }
-
 
 .grid-container {
   width: 100%;
@@ -60,7 +57,6 @@ background: #D9D9D9;
   background-color: pink;
 }
 
-
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -93,15 +89,6 @@ header {
   background: #F1F2AE;
 }
 
-/* .menu {
-  position: absolute;
-  width: 46px;
-  height: 37px;
-  right: 46px;
-  top: 26px;
- 
-} */
-
 .menu{
   margin-top: 20px;
   position: absolute;
@@ -109,7 +96,6 @@ header {
   height: 37px;
   right: 5px;
   top: 26px;
- 
 }
 
 .menu-item {
