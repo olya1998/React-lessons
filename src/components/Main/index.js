@@ -3,18 +3,49 @@ import Price from "./Price";
 import Burger from "./Burger";
 import Product from "./Product";
 
-const Main = (props) => {
+import React from "react";
+
+class Main extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      prices: [
+          {
+              name: "Bacon",
+              price: 23
+          },
+          {
+              name: "Cheese",
+              price: 24
+          },
+          {
+              name: "Salad",
+              price: 25
+          },
+          {
+              name: "Picled",
+              price: 26
+          },
+          {
+              name: "Meat",
+              price: 27
+          },
+      ]
+    }
+  }
+  render() {
     return (
       <MainStyled>
-        <Price />
+        <Price prices={this.state.prices} />
         <Burger />
         <Product />
       </MainStyled>
     );
+  }
+   
   };
 
 const MainStyled = styled.div({
-  // height: "10vh",
   width: "100%",
   padding: "0 15px",
   display: "flex",

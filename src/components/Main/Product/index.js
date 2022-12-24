@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Product = (props) => {
     return (
       <ProductStyled>
-      <h1>test product</h1>
+      <h1>Product List</h1>
       </ProductStyled>
     );
   };
@@ -11,7 +11,6 @@ const Product = (props) => {
 
 
   const ProductStyled = styled.div({
-    border: "1px solid red",
     position: "relative",
     minWidth: "12%",
     top: "50px",

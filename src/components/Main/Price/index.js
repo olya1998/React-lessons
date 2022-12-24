@@ -1,66 +1,44 @@
 import styled from "styled-components";
 
 const Price = (props) => {
+    const prices = props.prices;
 
-    const PriceItems = [
-        {
-            name: "Bacon",
-            price: 23
-        },
-        {
-            name: "Cheese",
-            price: 24
-        },
-        {
-            name: "Salad",
-            price: 25
-        },
-        {
-            name: "Picled",
-            price: 26
-        },
-        {
-            name: "Meat",
-            price: 27
-        },
-    ];
-
-
-    return (
-        <PriceStyled>
-            <PricesStyled>
-                
-                {PriceItems.map((item, index) => (
-                <PriceItemStyled>
+    return(
+        <PriceDiv>
+            <PriceList>
+                <p>Our prices</p>
+                {prices.map((item, index) => (
+                <PriceItem>
                     {item.name} : {item.price}₴
-                </PriceItemStyled>
+                </PriceItem>
                 ))}
-            </PricesStyled>
-      </PriceStyled>
-    );
-  };
+            </PriceList>
+      </PriceDiv>
+    
+)}
   
-  const PriceItemStyled = styled.li`
+  const PriceItem = styled.li`
     margin-left: 15px;
     cursor: pointer;
   `;
   
-  const PricesStyled = styled.ul`
+  const PriceList = styled.ul`
+    text-align: center;
     padding: 50% 20px;
     list-style: none;
     justify-content: flex-end;
     flex-basis: 35%;
     font-family: "Monsterrat Light";
     cursor: pointer;
-    color: green;
+    color: #1E90FF;
   `;
 
-const PriceStyled = styled.div({
-    border: "1px solid red",
+const PriceDiv = styled.div({
+    
     position: "relative",
     maxWidth: "12%",
     top: "50px",
-    minHeight: "450px",
+    height: "400px",
     flexBasis: "35%",
 });
 
