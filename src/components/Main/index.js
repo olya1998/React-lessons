@@ -9,7 +9,7 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      prices: [
+      products: [
           {
               name: "Bacon",
               price: 23
@@ -19,26 +19,27 @@ class Main extends React.Component {
               price: 24
           },
           {
-              name: "Salad",
+              name: "Lettuce",
               price: 25
           },
           {
-              name: "Picled",
+              name: "Sause",
               price: 26
           },
           {
-              name: "Meat",
+              name: "Tomato",
               price: 27
           },
-      ]
+      ],
+      burgerStack: []
     }
   }
   render() {
     return (
       <MainStyled>
-        <Price prices={this.state.prices} />
+        <Price products={this.state.products} />
         <Burger />
-        <Product />
+        <Product products={this.state.products} />
       </MainStyled>
     );
   }

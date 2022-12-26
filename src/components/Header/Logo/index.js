@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import burger from "./../../../assets/burger.png";
-// import Drawer from '@mui/material/Drawer';
 
 const Logo = () => {
   return (

@@ -4,17 +4,15 @@ const Burger = (props) => {
     return (
         <BurgerStyled>
             <BurgerContent>
-            <h1>burger price: 1₴</h1>
+              <h1>burger price: 1₴</h1>
               <CheckoutButton>checkout</CheckoutButton>
               <BurgerBuilder>
                 <TopBread></TopBread>
                 <PlaceHolder>Please, start by adding products...</PlaceHolder>
                 <BottomBread></BottomBread>
               </BurgerBuilder>
-              
             </BurgerContent>
-     
-      </BurgerStyled>
+        </BurgerStyled>
     );
   };
 

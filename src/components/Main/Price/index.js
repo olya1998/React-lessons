@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const Price = (props) => {
-    const prices = props.prices;
+    const products = props.products;
 
     return(
         <PriceDiv>
             <PriceList>
                 <p>Our prices</p>
-                {prices.map((item, index) => (
+                {products.map((item, index) => (
                 <PriceItem>
                     {item.name} : {item.price}₴
                 </PriceItem>

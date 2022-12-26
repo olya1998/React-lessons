@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-//import { LanguageSwitcher } from "../../../components/Shared";
 
 const Menu = () => {
   const menuItems = ["Home", "Orders", "Contact", "FAQ"];
